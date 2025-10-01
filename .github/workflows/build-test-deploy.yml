@@ -58,8 +58,7 @@ jobs:
     - name: upload artifacts
       uses: actions/upload-pages-artifact@v3
       with:
-      path: '.out' # wraps up our directory artifacts and sends to pages for deployment
+       path: './out' # wraps up our directory artifacts and sends to pages for deployment
     - name: deploy
       id: deployment # to be able to keep an eye on deployment status
       uses: actions/deploy-pages@v4
-
